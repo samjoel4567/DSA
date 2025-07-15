@@ -17,6 +17,9 @@ class Solution {
                 h++;
             }
         }
-        return v>0 && h>0;
+        if(h>0 && v>0){
+            return true;
+        }
+        return false;
     }
 }
