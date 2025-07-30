@@ -7,17 +7,15 @@ class Solution {
             if(nums[i]<pivot){
                 list1.add(nums[i]);
             }
-        }
-        for(int i=0;i<nums.length;i++){
-            if(nums[i]==pivot){
+            else if(nums[i]==pivot){
                 list2.add(nums[i]);
             }
-        }
-         for(int i=0;i<nums.length;i++){
-            if(nums[i]>pivot){
-                list3.add(nums[i]);
+            else{
+                 list3.add(nums[i]);
             }
         }
+
+
         for(int i=0;i<nums.length;i++){
             if(i<list1.size()){
                 nums[i]=list1.get(i);
@@ -29,6 +27,7 @@ class Solution {
                 nums[i]=list3.get(i-list1.size()-list2.size());
             }
         }
+
         return nums;
     }
 }
