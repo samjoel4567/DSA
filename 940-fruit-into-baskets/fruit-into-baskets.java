@@ -17,8 +17,8 @@ class Solution {
                 }
                 left++;
             }
-            max=Math.max(max,right-left);
+            max=Math.max(max,(right-left)+1);
         }
-        return max+1;
+        return max;
     }
 }
