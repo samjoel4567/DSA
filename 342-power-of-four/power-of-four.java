@@ -6,7 +6,7 @@ class Solution {
         else if(n==4){
             return true;
         }
-        for(int i=0;i<1000;i++){
+        for(int i=0;i<100;i++){
             if(Math.pow(4,i)==n){
                 return true;
             }
