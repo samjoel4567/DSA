@@ -10,10 +10,6 @@ class Solution {
             l++;
             r--;
         }
-        String m="";
-        for(char c:ch){
-            m=m+c;
-        }
-        return m;
+        return String.valueOf(ch);
     }
 }
