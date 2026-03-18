@@ -1,6 +1,6 @@
 class Solution {
     public List<Integer> findMissingElements(int[] nums) {
-        List<Integer> list= new ArrayList<>();
+        Set<Integer> list= new HashSet<>();
         for(int n :nums){
             list.add(n);
         }
