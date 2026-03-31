@@ -1,11 +1,12 @@
 class Solution {
     private boolean isSame(String str2,char[] word,int a ,int b){
         int k=0;
-        String s="";
         for(int i=a;i<=b;i++){
-            s=s+word[i];
+            if(str2.charAt(k++)!=word[i]){
+                return false;
+            }
         }
-        return s.equals(str2);
+        return true;
     }
     public String generateString(String str1, String str2) {
         int n=str1.length();
